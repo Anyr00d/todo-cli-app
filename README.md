@@ -12,10 +12,18 @@ A simple, terminal-based task management tool built with **Node.js**, **Yargs**,
 
 ## 📂 Project Structure
 ```
-├── index.js            # Main CLI logic
-├── tasks.json          # Task storage file
-├── package.json        # Project metadata & scripts
-└── README.md           # Project documentation
+todo-cli/  
+├── index.js           # Main entry point  
+├── commands/  
+│   ├── add.js        # Add command logic  
+│   ├── list.js       # List command logic  
+│   ├── complete.js   # Complete command logic  
+│   └── delete.js     # Delete command logic  
+├── utils/  
+│   ├── fileHandler.js  # File read/write functions  
+│   └── timeHelper.js   # getTimeAgo function  
+└── tasks.json         # Task storage
+
 ```
 
 ## 📦 Installation
